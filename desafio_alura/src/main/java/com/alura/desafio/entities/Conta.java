@@ -37,9 +37,18 @@ public class Conta {
         this.titular = titular;
     }
 
+    public String getTipoConta() {
+        return tipoConta;
+    }
+
     public void deposito(double valor){
         this.saldo += valor;
     }
+
+    public void saque(double valor){
+        this.saldo -= valor;
+    }
+
     
     
 
